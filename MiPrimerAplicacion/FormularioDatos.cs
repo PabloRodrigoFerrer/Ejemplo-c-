@@ -11,9 +11,10 @@ using System.Windows.Forms;
 namespace MiPrimerAplicacion
 {
     public partial class FormularioDatos : Form
-    {
+    {      
         public FormularioDatos()
         {
+            // Le agrego un comentario al archivo ... 
             InitializeComponent();
         }
 
