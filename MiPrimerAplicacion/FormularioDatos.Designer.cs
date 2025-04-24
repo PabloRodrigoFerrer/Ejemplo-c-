@@ -94,6 +94,8 @@
             // 
             // txtApellido
             // 
+            this.txtApellido.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtApellido.Location = new System.Drawing.Point(135, 35);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -104,6 +106,8 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNombre.Location = new System.Drawing.Point(135, 69);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -114,6 +118,8 @@
             // 
             // txtEdad
             // 
+            this.txtEdad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEdad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEdad.Location = new System.Drawing.Point(135, 101);
             this.txtEdad.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -125,6 +131,8 @@
             // 
             // txtDireccion
             // 
+            this.txtDireccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDireccion.Location = new System.Drawing.Point(135, 135);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -135,6 +143,9 @@
             // 
             // txtResultado
             // 
+            this.txtResultado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtResultado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtResultado.Location = new System.Drawing.Point(57, 204);
             this.txtResultado.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -147,6 +158,7 @@
             // 
             // btnAceptar
             // 
+            this.btnAceptar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnAceptar.Location = new System.Drawing.Point(135, 343);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnAceptar.Name = "btnAceptar";
@@ -158,6 +170,7 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnCancelar.Location = new System.Drawing.Point(240, 343);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnCancelar.Name = "btnCancelar";
@@ -171,6 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Ivory;
             this.ClientSize = new System.Drawing.Size(458, 422);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
@@ -185,9 +199,13 @@
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.MinimumSize = new System.Drawing.Size(474, 461);
             this.Name = "FormularioDatos";
-            this.Text = "FormularioDatos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Datos Personales";
+            this.Load += new System.EventHandler(this.FormularioDatos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

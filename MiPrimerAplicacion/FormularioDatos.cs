@@ -30,29 +30,36 @@ namespace MiPrimerAplicacion
             if (txtApellido.Text == "")
             {
                 txtApellido.BackColor = Color.LightCoral;
+                txtApellido.ForeColor = Color.White;
                 todoValido = false;
             }
 
             if (txtNombre.Text == "")
             {
                 txtNombre.BackColor = Color.LightCoral;
+                txtNombre.ForeColor = Color.White;
                 todoValido = false;
             }
 
             if (txtEdad.Text == "")
             {
                 txtEdad.BackColor = Color.LightCoral;
+                txtEdad.ForeColor = Color.White;
                 todoValido = false;
             }
 
             if (txtDireccion.Text == "")
             {
                 txtDireccion.BackColor = Color.LightCoral;
+                txtDireccion.ForeColor = Color.White;
                 todoValido = false;
             }
 
             if (!todoValido)
+            {
+                MessageBox.Show("Ingrese todos los datos solicitados" ,"Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
+            }
 
 
 
@@ -61,6 +68,8 @@ namespace MiPrimerAplicacion
                              $"Direccion: {txtDireccion.Text}";
 
             txtResultado.Text = mensaje;
+
+            MessageBox.Show("Carga de datos exitosa", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
@@ -73,6 +82,11 @@ namespace MiPrimerAplicacion
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void FormularioDatos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
